@@ -17,10 +17,6 @@ fn main() {
             .unwrap(),
     )
     .expect("Failed to init genesis logger");
-    if !log_enabled!(log::Level::Trace) {
-        eprintln!("To see the full demo, try setting `RUST_LOG=basic=trace`.");
-        return;
-    }
     self::nested::deep();
     debug!("test debug");
     info!("test info");
