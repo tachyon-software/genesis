@@ -23,9 +23,9 @@ extern crate genesis;
 
 fn main() {
     genesis::init();
-    info!("such information");
-    warn!("o_O");
-    error!("much error");
+    info!("information logged");
+    warn!("warn logged");
+    error!("error logged");
 }
 ```
 
