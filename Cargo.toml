@@ -1,0 +1,11 @@
+[package]
+name = "genesis"
+version = "0.0.1"
+authors = ["haze <haze@tachyon.soft>"]
+edition = "2018"
+
+[dependencies]
+log = { version = "0.4.6", features = ["std"] }
+chrono = "0.4.6"
+colored = "1.7.0"
+derive_builder = "0.7.1"
