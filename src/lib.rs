@@ -162,9 +162,9 @@ pub fn init_config(config: Configuration) -> Result<(), log::SetLoggerError> {
 }
 
 #[inline]
-pub fn init_level(level: log::Level) -> Result<(), log::SetLoggerError> {
+pub fn init_level(level: log::Level, max: log::LevelFilter) -> Result<(), log::SetLoggerError> {
     log::set_boxed_logger(Box::new(LogMechanism::level(level)))?;
-    log::set_max_level(log::Level::Trace.to_level_filter());
+    log::set_max_level(max);
     Ok(())
 }
 
